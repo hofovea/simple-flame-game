@@ -1,4 +1,3 @@
-import 'package:flame/cache.dart';
 import 'package:flame/components.dart';
 import 'package:flame/parallax.dart';
 import 'package:flutter/material.dart';

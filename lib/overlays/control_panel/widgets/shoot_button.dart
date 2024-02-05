@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:simple_flame_game/overlays/control_panel/widgets/rotated_arrow.dart';
 
 class ShootButton extends StatefulWidget {
   final VoidCallback? onTap;
