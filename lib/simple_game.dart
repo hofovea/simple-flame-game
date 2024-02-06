@@ -13,7 +13,7 @@ class SimpleGame extends FlameGame with HasCollisionDetection {
   World? _world;
 
   @override
-  final images = Images(prefix: 'assets/');
+  get images => Images(prefix: 'assets/');
 
   @override
   Future<void> onLoad() async {
