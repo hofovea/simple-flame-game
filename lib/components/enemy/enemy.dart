@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flame/cache.dart';
 import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
+import 'package:flame/effects.dart';
 import 'package:flame/sprite.dart';
 import 'package:flutter/material.dart';
 import 'package:simple_flame_game/common/common.dart' show EnemyState;
@@ -35,6 +36,13 @@ class Enemy extends SpriteAnimationGroupComponent<EnemyState>
     anchor = Anchor.center;
     flipVertically();
     await add(RectangleHitbox());
+    add(
+      ColorEffect(
+        Colors.red,
+        EffectController(duration: 0),
+        opacityTo: 0.3,
+      ),
+    );
 
     _timer = Timer(_defaultShootInterval, repeat: true, onTick: _shoot);
   }
